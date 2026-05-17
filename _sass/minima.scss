@@ -1,7 +1,0 @@
-// ~/.gem/ruby/3.4.1/gems/minima-2.5.2/_sass/minima.scss manually edited to replace color functions with color.scale() and vice versa. --- IGNORE ---
-
-@use "sass:color";
-
-$grey-color:       #828282 !default;
-$grey-color-light: color.scale($grey-color, $lightness: 81.6%);
-$grey-color-dark:  color.scale($grey-color, $lightness: -49.0384615385%);
