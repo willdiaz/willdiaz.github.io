@@ -1,4 +1,5 @@
 @use "./defaults";
+@use "sass:color";
 
 /**
  * Reset some basic elements
@@ -109,7 +110,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    // color: darken(defaults.$brand-color, 15%);
+    color: color.scale(defaults.$brand-color, $lightness: -15%);
   }
 
   &:hover {
@@ -234,21 +235,21 @@ table {
   margin-bottom: defaults.$spacing-unit;
   width: 100%;
   text-align: defaults.$table-text-align;
-  // color: lighten(defaults.$text-color, 18%);
+  color: color.scale(defaults.$text-color, $lightness: 18%);
   border-collapse: collapse;
   border: 1px solid defaults.$grey-color-light;
   tr {
     &:nth-child(even) {
-      // background-color: lighten(defaults.$grey-color-light, 6%);
+      background-color: color.scale(defaults.$grey-color-light, $lightness: 6%);
     }
   }
   th, td {
     padding: (defaults.$spacing-unit * 0.3333333333) (defaults.$spacing-unit * 0.5);
   }
   th {
-    // background-color: lighten(defaults.$grey-color-light, 3%);
-    // border: 1px solid darken(defaults.$grey-color-light, 4%);
-    // border-bottom-color: darken(defaults.$grey-color-light, 12%);
+    background-color: color.scale(defaults.$grey-color-light, $lightness: 3%);
+    border: 1px solid color.scale(defaults.$grey-color-light, $lightness: -4%);
+    border-bottom-color: color.scale(defaults.$grey-color-light, $lightness: -12%);
   }
   td {
     border: 1px solid defaults.$grey-color-light;
