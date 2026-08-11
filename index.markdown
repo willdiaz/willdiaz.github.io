@@ -9,4 +9,4 @@ linkedin: https://www.linkedin.com/in/willdiaz/
 
 # Will Diaz
 ## Senior Web Developer
-### Located in the Washington D.C. / Southern Maryland / Northern Virgina area
+### Located in the Washington D.C. / Southern Maryland / Northern Virginia area
