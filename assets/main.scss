@@ -3,3 +3,72 @@
 ---
 
 @use "minima";
+
+:root {
+    --bg-color: #0F172A;
+    --card-bg-color: #1E293B;
+    --footer-bg-color: #334155;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --accent: #38BDF8;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.wrapper {
+    background-color: var(--card-bg-color);
+    max-width: 85vw;
+    min-width:70vw;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 0;
+}
+
+.home {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.linkedin {
+    padding: 0 0 1rem 2rem;
+    a {
+        color: var(--accent);
+    }
+    img {
+        width: 4rem;
+        height: auto;
+    }
+}
+
+.footer {
+    color: var(--text-secondary);
+    background-color: var(--footer-bg-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: .75rem;
+
+    span {
+        font-size: 0.875rem;
+    }
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.25;
+}

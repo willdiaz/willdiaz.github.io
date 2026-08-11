@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+          {{ content }}
+        </div>
+
+        {% if page.linkedin %}
+        <div class="linkedin">
+          <a href="{{ page.linkedin }}" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/images/LI-In-Bug.png" alt="LinkedIn profile" class="linkedin__image">
+            Connect with me on LinkedIn
+          </a>
+        </div>
+        {% endif %}
+
+        {% if page.footer %}
+          <div class="footer">
+            <span>&copy; {{ "now" | date: "%Y" }} {{ page.footer }}</span>
+          </div>
+        {% endif %}
+      </div>
+    </main>
+
+  </body>
+
+</html>
